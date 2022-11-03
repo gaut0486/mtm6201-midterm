@@ -1,13 +1,175 @@
+/*******************************
+
+    Setting global font sizes
+
+*********************************/
+
+
 :root {
+    /* Font size */
+    --h1-fontsize: 4rem;
+    --h2-fontsize: 2rem;
+    --h4-fontsize: 1.75rem;
+    --h5-fontsize: 1.25rem;
+    --h6-fontsize: 1rem;
+    --p-fontsize: 1.2rem;
+    --li-fontsize: 1.5rem;
+    --a-fontsize: 3rem;
 
+    /* font color */
 
-
+    --h1-color: #E07677;
+    --background-color: #B7DEC3;
+    --flavour-background: #9898CB;
+    --flavours-background: #583795;
+    --flavours-color: #CF677D;
+    --flavour-button-color: #B7DEC3;
 
 }
 
 * {
     font-size: 16px;
 }
+
+h2, h3, h4, h5, h6, p {
+    font-family: 'Open Sans', sans-serif
+}
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: var(--h1-fontsize);
+    color: var(--h1-color)
+}
+h2 {
+    font-size: var(--h2-fontsize);
+}
+h3 {
+    font-size: var(--h3-fontsize);
+}
+h4 {
+    font-size: var(--h4-fontsize);
+}
+h5 {
+    font-size: var(--h5-fontsize);
+}
+h6 {
+    font-size: var(--h6-fontsize);
+}
+p {
+    font-size: var(--p-fontsize);
+}
+
+li {
+    font-size: var(--li-fontsize);
+}
+
+
+/****************************
+
+Main styling starts here
+
+******************************/
+
+/*******************
+
+    Wrappers
+    Allows page to be responsive to different screen sizes
+
+******************/
+.outer_wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: var(--background-color);
+}
+
+.inner_wrapper {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+
+/*******************************
+
+        Header styling
+
+********************************/
+
+
+header {
+    background-color: #7E67AD;
+    margin: 0 auto 2em;
+    padding: 1rem;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header nav {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.9rem;
+}
+
+header nav a:hover {
+    background-color: var(--h1-color);
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px rgba(224,118,119,0.44)
+
+}
+
+
+
+
+/********************
+
+
+Main section Styling
+
+
+*************************/
+
+
+/* Todays Flavours */
+.our_flavours {
+    background-color: var(--flavour-background);
+    margin-bottom: 4rem;
+}
+
+.our_flavours h2 {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.our_flavours ul {
+    text-align: center;
+    background-color: var(--flavours-background);
+    padding: 1rem;
+}
+
+
+
+.our_flavours li {
+    color: var(--flavours-color);
+    padding: 1rem;
+}
+
+.our_flavours a {
+    text-decoration: none;
+    color: var(--flavour-button-color);
+    font-size: var(--a-fontsize);
+    background-color: var(--flavours-background);
+}
+
+
+
+
+
 
 
 
