@@ -8,7 +8,7 @@
 :root {
     /* Font size */
     --h1-fontsize: 4rem;
-    --h2-fontsize: 2rem;
+    --h2-fontsize: 2.5rem;
     --h4-fontsize: 1.75rem;
     --h5-fontsize: 1.25rem;
     --h6-fontsize: 1rem;
@@ -96,7 +96,7 @@ Main styling starts here
 
 header {
     background-color: #7E67AD;
-    margin: 0 auto 2em;
+    margin: 0 auto;
     padding: 1rem;
 }
 
@@ -138,18 +138,28 @@ Main section Styling
 /* Todays Flavours */
 .our_flavours {
     background-color: var(--flavour-background);
+    padding: 2rem;
     margin-bottom: 4rem;
+    align-items: center;
+    text-align: center;
 }
 
 .our_flavours h2 {
     text-align: center;
-    margin: 1rem 0;
 }
 
+
+.our_flavours img {
+    display: block;
+    margin: 1em auto;
+    max-width: 75%;
+}
+
+
 .our_flavours ul {
-    text-align: center;
     background-color: var(--flavours-background);
     padding: 1rem;
+    margin-bottom: 2rem;
 }
 
 
@@ -164,7 +174,9 @@ Main section Styling
     color: var(--flavour-button-color);
     font-size: var(--a-fontsize);
     background-color: var(--flavours-background);
+    padding: .8rem;
 }
+
 
 
 
