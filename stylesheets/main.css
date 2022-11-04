@@ -116,7 +116,7 @@ header nav a {
     padding: 0.9rem;
 }
 
-header nav a:hover {
+* a:hover {
     background-color: var(--h1-color);
     border-radius: 10px;
     box-shadow: 2px 5px 5px rgba(224,118,119,0.44)
@@ -136,27 +136,42 @@ Main section Styling
 
 
 /* Todays Flavours */
-.our_flavours {
+
+.hero {
+    margin: 1em auto;
+    max-width: 100%;
     background-color: var(--flavour-background);
-    padding: 2rem;
-    margin-bottom: 4rem;
-    align-items: center;
+    margin-bottom: 1rem;
     text-align: center;
+    border-radius: 10px;
+    padding: 1REM;
 }
 
-.our_flavours h2 {
-    text-align: center;
-}
-
-
-.our_flavours img {
+.hero img {
     display: block;
+    padding-top: 1rem;
     margin: 1em auto;
     max-width: 75%;
 }
 
 
+.our_flavours {
+    margin: 1em auto;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1REM;
+}
+
+.our_flavours h2 {
+    margin-bottom: .50em;
+    text-align: center;
+}
+
 .our_flavours ul {
+    display: none;
+    display: flex;
     background-color: var(--flavours-background);
     padding: 1rem;
     margin-bottom: 2rem;
@@ -165,6 +180,7 @@ Main section Styling
 
 
 .our_flavours li {
+    margin: 0 auto;
     color: var(--flavours-color);
     padding: 1rem;
 }
@@ -175,8 +191,13 @@ Main section Styling
     font-size: var(--a-fontsize);
     background-color: var(--flavours-background);
     padding: .8rem;
+    border-radius: 10px;
+    border: 1px solid white;
 }
 
+.order_now {
+    padding-bottom: 2rem;
+}
 
 
 
