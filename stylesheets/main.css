@@ -164,9 +164,14 @@ Main section Styling
     padding: 1REM;
 }
 
-.our_flavours h2 {
-    margin-bottom: .50em;
-    text-align: center;
+.cls-1 {
+    fill: #fff;
+    font-family: OpenSans, 'Open Sans';
+    font-size: 150px;
+}
+
+.cls-2 {
+    fill: #cf677d;
 }
 
 .our_flavours ul {
