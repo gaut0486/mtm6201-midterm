@@ -17,7 +17,7 @@
     --li-fontsize: 1.5rem;
     --a-fontsize: 3rem;
 
-    /* font color */
+    /*  colors */
 
     --h1-color: #E07677;
     --background-color: #ffffff;
@@ -25,6 +25,16 @@
     --flavours-background: #583795;
     --flavours-color: #CF677D;
     --flavour-button-color: #B7DEC3;
+    --header-footer-color: #7E67AD;
+
+
+    /* Button Master Styles */
+
+    --button-color: var(--flavours-color);
+    --button-background: url(/images/sprinkles.svg);
+    --button-radius: 8px;
+    --button-border: 1px solid black;
+    --button-shadow: 2px 5px 8px rgba(224,118,119,0.44);
 
 }
 
@@ -94,7 +104,7 @@ Main styling starts here
 
 
 header {
-    background-color: #7E67AD;
+    background-color: var(--header-footer-color);
     margin: 0 auto;
     padding: 1rem;
 }
@@ -119,7 +129,6 @@ header nav a {
     background-color: var(--h1-color);
     border-radius: 10px;
     box-shadow: 2px 5px 8px rgba(224,118,119,0.44)
-
 }
 
 
@@ -161,7 +170,7 @@ Main section Styling
     max-width: 100%;
     background-color: var(--flavour-background);
     text-align: center;
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 1rem;
     box-shadow: 0px 1px 5px 2px var(--flavour-background);
 }
@@ -203,45 +212,71 @@ Main section Styling
 
 .order_now {
     margin: 2em auto;
-    text-align: center
+    text-align: center;
 }
 
 .order_now a {
     text-decoration: none;
     color: black;
-    font-size: var(--a-fontsize);
-    /* background-color: var(--flavours-background); */
+    font-size: 2.5em;
     background: url(/images/sprinkles.svg);
     background-color: var(--h1-color);
     padding: .4rem;
-    border-radius: 10px;
+    border-radius: 8px;
     border: 1px solid black;
-    box-shadow: 2px 5px 8px rgba(224,118,119,0.44)
+    box-shadow: 1px 8px 5px rgba(224,118,119,0.44);
 }
 
 .order_now a:hover {
     box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.44) inset;
-    color: white
+    color: white;
 }
 
 .our_story {
-    /* background-color: var(--flavour-background); */
     text-align: center;
     border-radius: 10px;
-    padding: 1rem;
-    /* box-shadow: 0px 1px 5px 2px var(--flavour-background); */
+    padding: 1em;
+    margin: .43em auto;
+    background-color: var(--flavour-background);
+    box-shadow: 2px 5px 8px rgba(224,118,119,0.44);
+}
+
+.our_story img {
+    margin: 1em auto;
+}
+
+.our_story p {
+    margin-bottom: .70em;
+    color: white;
+}
+
+.our_story a {
+    text-decoration: none;
+    color: black;
+    font-size: calc(var(--a-fontsize) - .88em);
+    background: var(--button-background);
+    background-color: var(--button-color);
+    padding: .1em;
+    border-radius: var(--button-radius);
+    border:var(--button-border);
+    box-shadow: var(--button-shadow);
+}
+
+.our_story a:hover {
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.44) inset;
+    color: white;
 }
 
 
-.our_story h3 {
-    margin: .01em auto .4em;
+footer {
+    background-color: var(--header-footer-color);
+    text-align: center;
 }
 
+footer h3 {
+    font-family: 'Dancing Script', cursive;
+    color: var(--h1-color);
 
-
-
-
-
-
+}
 
 
