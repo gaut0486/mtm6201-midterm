@@ -271,12 +271,36 @@ Main section Styling
 footer {
     background-color: var(--header-footer-color);
     text-align: center;
+    padding: 1em;
 }
 
 footer h3 {
     font-family: 'Dancing Script', cursive;
     color: var(--h1-color);
+}
 
+footer table {
+    margin: 1em auto;
+    color: white;
+}
+
+footer table th {
+    font-size: 1.5rem;
+}
+
+footer table td {
+    padding: 0.5rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    margin: 1em;
+
+
+}
+footer p {
+    color: white;
 }
 
 
