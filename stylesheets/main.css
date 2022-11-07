@@ -107,7 +107,6 @@ header {
     background-color: var(--header-footer-color);
     margin: 0 auto;
     padding: 1rem;
-    transform: ;
 }
 
 header h1 {
@@ -129,7 +128,7 @@ header nav a {
 * a:hover {
     background-color: var(--h1-color);
     border-radius: 10px;
-    box-shadow: 2px 5px 8px rgba(224,118,119,0.44)
+    box-shadow: 2px 5px 8px rgba(224,118,119,0.44);
 }
 
 
