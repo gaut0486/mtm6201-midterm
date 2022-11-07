@@ -87,11 +87,11 @@ Main styling starts here
 
 ******************/
 .outer_wrapper {
-    width: 100%;
+    max-width: 100%;
 }
 
 .inner_wrapper {
-    max-width: 98%;
+    max-width: 95%;
     margin: 0 auto;
 }
 
@@ -154,24 +154,27 @@ Main section Styling
 .hero img {
     display: block;
     padding-top: 1rem;
-    margin: 1em auto;
+    margin: 1em auto 2em;
     max-width: 75%;
-    animation: cupcake_rotate 5s infinite ease-in-out;
 }
 
-/* Used to add animation styles to cupcake SVG */
-
-@keyframes cupcake_rotate {
-    0% {
-        transform: scale(1.0);
-    }
-    90% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1.0);
-    }
+.hero a {
+    text-decoration: none;
+    color: black;
+    font-size: 2.5em;
+    background-color: var(--h1-color);
+    padding: .4rem;
+    border-radius: 8px;
+    border: 1px solid black;
+    box-shadow: 1px 8px 5px rgba(224,118,119,0.44);
 }
+
+.hero a:hover {
+    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.44) inset;
+    color: white;
+    animation: orderbutton 3s infinite ease-in-out;
+}
+
 
 /* Todays Flavours */
 
@@ -181,8 +184,7 @@ Main section Styling
 /* svg banner background color */
 .svg-featured_banner {
     display: block;
-    max-width: 90vw;
-    margin:  .50em auto;
+    margin: .50em auto;
     fill: rgb(207, 103, 125);
     filter: drop-shadow(3px 5px 2px rgba(82, 41, 50, 0.4));
 }
@@ -190,12 +192,13 @@ Main section Styling
 /* SVG banner select text */
 .svg-featured_banner tspan {
     fill: #fff;
-    font-size: 12rem;
+    font-size: 14em;
 }
 
 .our_flavours {
     text-align: center;
     display: flex;
+    padding: .20em;
     background: url(/images/sprinkles.svg);
     box-shadow: 0px 1px 5px 2px var(--flavour-background);
 }
@@ -203,8 +206,6 @@ Main section Styling
 .our_flavours ul {
     padding: 1rem;
 }
-
-
 
 .our_flavours li {
     margin: 1em auto;
@@ -227,27 +228,7 @@ Main section Styling
 }
 
 
-.order_now {
-    margin: 2em auto;
-    text-align: center;
-}
 
-.order_now a {
-    text-decoration: none;
-    color: black;
-    font-size: 2.5em;
-    background-color: var(--h1-color);
-    padding: .4rem;
-    border-radius: 8px;
-    border: 1px solid black;
-    box-shadow: 1px 8px 5px rgba(224,118,119,0.44);
-}
-
-.order_now a:hover {
-    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.44) inset;
-    color: white;
-    animation: orderbutton 3s infinite ease-in-out;
-}
 
 .our_story {
     text-align: center;
