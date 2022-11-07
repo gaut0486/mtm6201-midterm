@@ -31,7 +31,7 @@
     /* Button Master Styles */
 
     --button-color: var(--flavours-color);
-    --button-background: url(/images/sprinkles.svg);
+    --button-background: url(images/sprinkles.svg);
     --button-radius: 8px;
     --button-border: 1px solid black;
     --button-shadow: 2px 5px 8px rgba(224,118,119,0.44);
@@ -204,7 +204,7 @@ Main section Styling
 .our_flavours {
     text-align: center;
     display: flex;
-    background: url(/images/sprinkles.svg);
+    background: url(images/sprinkles.svg);
     box-shadow: 0px 1px 5px 2px var(--flavour-background);
 }
 /* List of Flavours */
@@ -244,7 +244,7 @@ Main section Styling
     text-decoration: none;
     color: black;
     font-size: 2.5em;
-    background: url(/images/sprinkles.svg);
+    background: url(images/sprinkles.svg);
     background-color: var(--h1-color);
     padding: .4rem;
     border-radius: 8px;
