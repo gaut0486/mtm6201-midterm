@@ -107,6 +107,7 @@ header {
     background-color: var(--header-footer-color);
     margin: 0 auto;
     padding: 1rem;
+    transform: ;
 }
 
 header h1 {
@@ -143,6 +144,41 @@ Main section Styling
 
 *************************/
 
+/* Selects  */
+.hero {
+    margin: 1em auto;
+    max-width: 100%;
+    background-color: var(--flavour-background);
+    text-align: center;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0px 1px 5px 2px var(--flavour-background);
+}
+/* selects cupcake SVG */
+.hero img {
+    display: block;
+    padding-top: 1rem;
+    margin: 1em auto;
+    max-width: 75%;
+    animation: cupcake_rotate 5s infinite ease-in-out;
+}
+
+/* Used to add animation styles to cupcake SVG */
+
+@keyframes cupcake_rotate {
+    0% {
+        transform: scale(1.0);
+    }
+    90% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+
+
 
 /* Todays Flavours */
 
@@ -165,37 +201,13 @@ Main section Styling
     font-size: 12rem;
 }
 
-.hero {
-    margin: 1em auto;
-    max-width: 100%;
-    background-color: var(--flavour-background);
-    text-align: center;
-    border-radius: 8px;
-    padding: 1rem;
-    box-shadow: 0px 1px 5px 2px var(--flavour-background);
-}
-
-.hero img {
-    display: block;
-    padding-top: 1rem;
-    margin: 1em auto;
-    max-width: 75%;
-}
-
-/* List of Flavours */
-
-
-.flavours_wrapper {
-    margin: 0 auto;
-}
-
 .our_flavours {
     text-align: center;
     display: flex;
     background: url(/images/sprinkles.svg);
     box-shadow: 0px 1px 5px 2px var(--flavour-background);
 }
-
+/* List of Flavours */
 .our_flavours ul {
     padding: 1rem;
 }
@@ -207,6 +219,19 @@ Main section Styling
     color: black;
     background-color: rgba(230, 216, 216, 0.319);
     border: 10px black;
+}
+
+
+@keyframes orderbutton {
+    0% {
+        transform: scale(1.0);
+    }
+    90% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1.0);
+    }
 }
 
 
@@ -230,6 +255,7 @@ Main section Styling
 .order_now a:hover {
     box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.44) inset;
     color: white;
+    animation: orderbutton 3s infinite ease-in-out;
 }
 
 .our_story {
@@ -241,6 +267,9 @@ Main section Styling
     box-shadow: 2px 5px 8px rgba(224,118,119,0.44);
 }
 
+.our_story h2 {
+    color: white;
+}
 .our_story img {
     margin: 0 auto;
 }
@@ -271,59 +300,6 @@ Main section Styling
 
 /* Styling Footer */
 
-footer {
-    background-color: var(--header-footer-color);
-    padding: 1em;
-    border-top: 2px var(--flavours-color) solid;
-    border-bottom: 2px var(--flavours-color) solid;
-    justify-content: center;
-}
-/* Selects headings within footer */
-
-
-/* Selects hours table */
-footer table {
-    margin: 1em auto;
-    color: white;
-}
-footer table caption {
-    margin-bottom: .50em;
-}
-
-footer table caption h3 {
-    font-family: 'Dancing Script', cursive;
-    color: var(--h1-color);
-}
-/* Table Headings */
-footer table th {
-    font-size: var(--h5-fontsize);
-}
-
-/* Hours Table Items */
-footer table td {
-    padding: 0.5rem;
-}
-/* links within table */
-footer table a {
-    text-decoration: none;
-    color: white;
-}
-/* Selects text within table A links */
-footer table p {
-    color: white;
-}
-
-/* Styling Line Breaker within Footer */
-
-.line_breaker {
-    margin: 1em auto;
-    border-bottom: var(--h1-color) 1px solid;
-}
-
-
-
-/* Contact forms */
-
 .contact_us {
     margin: 0 auto;
 }
@@ -352,8 +328,8 @@ footer table p {
     text-align: center;
     color: black;
     margin: .75em;
-    padding-bottom: 1em;
-    border-bottom: var(--h1-color) 2px solid;
+    padding-top: 1em;
+    border-top: var(--h1-color) 2px solid;
 }
 
 .contact_form input, textarea {
@@ -380,3 +356,74 @@ footer table p {
     box-shadow: var(--button-shadow);
 }
 
+/* Contact forms */
+
+footer {
+    background-color: var(--header-footer-color);
+    padding: 1em;
+    border-top: 2px var(--flavours-color) solid;
+    border-bottom: 2px var(--flavours-color) solid;
+    justify-content: center;
+}
+/* Selects headings within footer */
+
+
+/* Selects hours table */
+footer table {
+    margin: 1em auto;
+    color: white;
+}
+footer table caption {
+    margin-bottom: .50em;
+}
+
+footer table caption h3 {
+    font-family: 'Dancing Script', cursive;
+    color: var(--h1-color);
+    margin-bottom: .50em;
+}
+
+footer table:nth-child(1) caption h3 {
+    animation: openFrom 3s infinite ease-in-out;
+
+}
+
+
+
+
+/* Table Headings */
+footer table th {
+    font-size: var(--h5-fontsize);
+}
+
+/* Hours Table Items */
+footer table td {
+    padding: 0.5rem;
+}
+/* links within table */
+footer table a {
+    text-decoration: none;
+    color: white;
+}
+/* Selects text within table A links */
+footer table p {
+    color: white;
+}
+
+/* Styling Line Breaker within Footer */
+
+.line_breaker {
+    margin: 1em auto;
+    border-bottom: var(--h1-color) 1px solid;
+}
+
+
+
+@keyframes openFrom {
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
