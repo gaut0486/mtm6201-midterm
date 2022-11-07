@@ -203,7 +203,7 @@ Main section Styling
 .our_flavours {
     text-align: center;
     display: flex;
-    background: url(images/sprinkles.svg);
+    background: url(/images/sprinkles.svg);
     box-shadow: 0px 1px 5px 2px var(--flavour-background);
 }
 /* List of Flavours */
