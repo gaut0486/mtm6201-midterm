@@ -12,7 +12,7 @@
     --h3-fontsize: 2.2rem;
     --h4-fontsize: 1.75rem;
     --h5-fontsize: 1.25rem;
-    --h6-fontsize: 1rem;
+    --h6-fontsize: 1.2rem;
     --p-fontsize: 1.2rem;
     --li-fontsize: 1.5rem;
     --a-fontsize: 3rem;
@@ -42,7 +42,7 @@
     font-size: 16px;
 }
 
-h2, h3, h4, h5, h6, p {
+h2, h3, h4, h5, h6, p, label, input {
     font-family: 'Open Sans', sans-serif
 }
 h1 {
@@ -276,46 +276,107 @@ footer {
     padding: 1em;
     border-top: 2px var(--flavours-color) solid;
     border-bottom: 2px var(--flavours-color) solid;
+    justify-content: center;
 }
 /* Selects headings within footer */
-footer h3 {
-    font-family: 'Dancing Script', cursive;
-    color: var(--h1-color);
-}
-/* Selects Open hours table with heading */
-.open_hours {
-    margin: 1em auto;
-    text-align: center;
-}
 
 
 /* Selects hours table */
-.open_hours table {
+footer table {
     margin: 1em auto;
     color: white;
 }
-/* Hours Table Items */
-.open_hours table td {
-    padding: 0.5rem;
+footer table caption {
+    margin-bottom: .50em;
 }
 
-/* contact us section within footer */
+footer table caption h3 {
+    font-family: 'Dancing Script', cursive;
+    color: var(--h1-color);
+}
+/* Table Headings */
+footer table th {
+    font-size: var(--h5-fontsize);
+}
+
+/* Hours Table Items */
+footer table td {
+    padding: 0.5rem;
+}
+/* links within table */
+footer table a {
+    text-decoration: none;
+    color: white;
+}
+/* Selects text within table A links */
+footer table p {
+    color: white;
+}
+
+/* Styling Line Breaker within Footer */
+
+.line_breaker {
+    margin: 1em auto;
+    border-bottom: var(--h1-color) 1px solid;
+}
+
+
+
+/* Contact forms */
 
 .contact_us {
-    margin: 1em auto;
+    margin: 0 auto;
+}
+
+.contact_us div {
+    margin: 0 auto 1em;
+    display: block;
     text-align: center;
 }
 
-/* Selects contact us links */
-.contact_us a {
-    text-decoration: none;
-    color: white;
-    margin: 1em;
-}
-/* Selects text within contact us link */
-.contact_us p {
-    color: white;
-    font-family: 'Dancing Script', cursive;
+.contact_us h1{
+    margin: .22em auto;
 }
 
+
+.contact_form {
+    margin: 0 auto;
+    background-color: var(--flavour-background);
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 2px 5px 8px rgba(224,118,119,0.44);
+}
+
+.contact_form h3 {
+    font-size: calc(var(--h3-fontsize) - .75em);
+    text-align: center;
+    color: black;
+    margin: .75em;
+    padding-bottom: 1em;
+    border-bottom: var(--h1-color) 2px solid;
+}
+
+.contact_form input, textarea {
+    display: block;
+    width: 50%;
+    margin: .22em auto;
+    resize: none;
+    border-radius: var(--button-radius)
+}
+
+.contact_form label {
+    font-size: var(--h6-fontsize);
+    margin: .22em auto;
+}
+
+.contact_form #submit {
+    margin-top: .52em;
+    background: var(--button-background);
+    background-color: var(--button-color);
+    border-radius: var(--button-radius);
+    border: var(--flavours-color) 1px solid;
+    color: black;
+    padding: .55em;
+    box-shadow: var(--button-shadow);
+}
 
