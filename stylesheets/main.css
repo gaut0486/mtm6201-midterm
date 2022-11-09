@@ -415,31 +415,48 @@ footer table p {
     }
 
     main {
+        justify-content: center;
+        align-items: center;
+        max-width: 90vw;
+        margin: auto;
         display: grid;
-        grid-template-rows: repeat(2, 2fr);
-        grid-template-columns: repeat(2, 2fr);
-        grid-template-areas:
-        "order story"
-        "flavour flavour";
+        gap: 1em;
     }
+    .flavour svg {
+        grid-column: 2 / span 3;
+        grid-row: 1 / span 1 ;
+        max-width: 50vw;
+    }
+
+    .our_flavours {
+        grid-column: 2 / span 3;
+        grid-row: 2 / 2 ;
+    }
+
 
     .hero {
-        grid-area: order;
         margin: 1em auto;
         padding: 2em;
-        height: fit-content;
+        grid-column: 1 / span 2;
+        grid-row: 3 / span 4;
+
     }
+
+    .our_story img {
+        width: 65%;
+    }
+
+
     .our_story {
-        grid-area: story;
-        margin: 0 auto;
+        margin: 1em auto;
+        grid-column: 3 / span 5;
+        grid-row: 3 / span 4;
         padding: 2em;
-        height: fit-content;
-        width: fit-content;
+        box-shadow: var(--button-shadow);
     }
-    .flavours {
-        grid-area: flavour;
 
-
+    .footer_flex {
+        display: flex;
     }
 
 }
