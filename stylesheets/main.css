@@ -40,10 +40,11 @@
 
 * {
     font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h2, h3, h4, h5, h6, p, label, input {
-    font-family: 'Open Sans', sans-serif
+    font-family: 'Open Sans', sans-serif;
 }
 h1 {
     font-family: 'Dancing Script', cursive;
@@ -159,11 +160,13 @@ Main section Styling
 }
 
 .hero a {
+    display: block;
     text-decoration: none;
     color: black;
     font-size: 2.5em;
-    background-color: var(--h1-color);
     padding: .4rem;
+    margin: .50em;
+    background-color: var(--h1-color);
     border-radius: 8px;
     border: 1px solid black;
     box-shadow: 1px 8px 5px rgba(224,118,119,0.44);
@@ -181,37 +184,40 @@ Main section Styling
 
 /* Our Flavours Section - Updates for daily flavours */
 
-/* svg banner background color */
-.svg-featured_banner {
-    display: block;
-    margin: .50em auto;
-    fill: rgb(207, 103, 125);
-    filter: drop-shadow(3px 5px 2px rgba(82, 41, 50, 0.4));
-}
-
-/* SVG banner select text */
-.svg-featured_banner tspan {
-    fill: #fff;
-    font-size: 14em;
-}
-
-.our_flavours {
+.flavour {
+    padding: .80em;
     text-align: center;
-    display: flex;
-    padding: .20em;
-    background: url(/images/sprinkles.svg);
-    box-shadow: 0px 1px 5px 2px var(--flavour-background);
-}
-/* List of Flavours */
-.our_flavours ul {
-    padding: 1rem;
+    background: url(/images/pattern_sprinkles.svg);
 }
 
-.our_flavours li {
-    margin: 1em auto;
-    color: black;
-    background-color: rgba(230, 216, 216, 0.319);
-    border: 10px black;
+.flavour h3 {
+    text-transform: uppercase;
+    background-color: var(--h1-color);
+    color: white;
+    padding: 1.5rem;
+    border: rgba(0, 0, 0, 0.39) 10px solid;
+    border-radius: 15px;
+}
+
+
+
+/* List of Flavours */
+.flavour ul {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    background-color: var(--h1-color);
+    border-radius: 15px;
+    padding: 1em;
+    border: solid rgba(0, 0, 0, .39) 10px;
+}
+
+
+
+.flavour li {
+    margin: 0 auto;
+    font-size: 1.2em;
 }
 
 
@@ -358,9 +364,6 @@ footer table:nth-child(1) caption h3 {
 
 }
 
-
-
-
 /* Table Headings */
 footer table th {
     font-size: var(--h5-fontsize);
@@ -388,6 +391,7 @@ footer table p {
 }
 
 
+/* Animations*/
 
 @keyframes openFrom {
     0% {
@@ -402,62 +406,56 @@ footer table p {
 
 /* Media Queries */
 
-@media screen and (min-width: 920px) {
+/* Desktop */
+
+@media screen and (min-width: 720px) {
+
+    /* setting inner wrapper for better spacing */
     .inner_wrapper {
         max-width: 85vw;
     }
 
-
+    /* Adjusting Nav to be center */
     header nav  {
         margin: .50em auto;
         justify-content: space-around;
         width: 30vw;
     }
 
+
+/* Selecting entire main content for alignment using grid  */
     main {
-        justify-content: center;
-        align-items: center;
-        max-width: 90vw;
-        margin: auto;
         display: grid;
+        grid-template-areas:
+        "b b"
+        "about order";
         gap: 1em;
-    }
-    .flavour svg {
-        grid-column: 2 / span 3;
-        grid-row: 1 / span 1 ;
-        max-width: 50vw;
+
     }
 
-    .our_flavours {
-        grid-column: 2 / span 3;
-        grid-row: 2 / 2 ;
+    .flavour {
+        grid-area: b;
+        grid-template-columns: 1 / 3;
+    }
+    .flavour h3 {
+        font-size: 3em;
+
     }
 
+    .flavour li {
+        font-size: 2em;
+    }
 
-    .hero {
-        margin: 1em auto;
-        padding: 2em;
-        grid-column: 1 / span 2;
-        grid-row: 3 / span 4;
-
+    .our_story {
+        grid-area: about;
+        max-width: 40vw;
     }
 
     .our_story img {
-        width: 65%;
+        max-width: 25vw;
     }
+    .hero { grid-area: order; }
 
-
-    .our_story {
-        margin: 1em auto;
-        grid-column: 3 / span 5;
-        grid-row: 3 / span 4;
-        padding: 2em;
-        box-shadow: var(--button-shadow);
-    }
-
-    .footer_flex {
-        display: flex;
-    }
 
 }
 
