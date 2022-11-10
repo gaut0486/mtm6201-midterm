@@ -223,6 +223,7 @@ Main section Styling
     font-size: 1.2em;
 }
 
+/* Animation*/
 
 @keyframes orderbutton {
     0% {
@@ -235,7 +236,7 @@ Main section Styling
         transform: scale(1.0);
     }
 }
-
+/* our story card */
 .our_story {
     max-width: 88vw;
     text-align: center;
@@ -258,25 +259,6 @@ Main section Styling
     color: white;
 }
 
-.our_story a {
-    text-decoration: none;
-    color: black;
-    font-size: calc(var(--a-fontsize) - .88em);
-    background: var(--button-background);
-    background-color: var(--button-color);
-    padding: .1em;
-    border-radius: var(--button-radius);
-    border:var(--button-border);
-    box-shadow: var(--button-shadow);
-}
-
-.our_story a:hover {
-    box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.44) inset;
-    color: white;
-}
-
-
-
 /* Styling Footer */
 
 .contact_us {
@@ -294,6 +276,7 @@ Main section Styling
 }
 
 
+/* Selects contact form within contact page */
 .contact_form {
     margin: 0 auto;
     background-color: var(--flavour-background);
@@ -310,7 +293,7 @@ Main section Styling
     padding-top: 1em;
     border-top: var(--h1-color) 2px solid;
 }
-
+/* selects inputs  */
 .contact_form input, textarea {
     display: block;
     width: 50%;
@@ -319,6 +302,7 @@ Main section Styling
     border-radius: var(--button-radius)
 }
 
+/* selects form lables */
 .contact_form label {
     font-size: var(--h6-fontsize);
     margin: .22em auto;
@@ -334,8 +318,17 @@ Main section Styling
     padding: .55em;
     box-shadow: var(--button-shadow);
 }
+/* selects contact form submit page */
+.contact_submit {
+    justify-content: center;
+    background-color: var(--flavour-background);
+    margin: 1em auto;
+    padding: 2em;
+    width: 75vw;
+    border-radius: 15px;
+}
 
-/* Contact forms */
+/* Site wide footer selector */
 
 footer {
     background-color: var(--header-footer-color);
@@ -344,10 +337,8 @@ footer {
     border-bottom: 2px var(--flavours-color) solid;
     justify-content: center;
 }
-/* Selects headings within footer */
 
-
-/* Selects hours table */
+/* Selects (two) footer table */
 footer table {
     margin: 1em auto;
     color: white;
@@ -362,6 +353,7 @@ footer table caption h3 {
     margin-bottom: .50em;
 }
 
+/* adding animation to footer open form */
 footer table:nth-child(1) caption h3 {
     animation: openFrom 3s infinite ease-in-out;
 
@@ -385,22 +377,6 @@ footer table a {
 footer table p {
     color: white;
 }
-
-/* Styling Line Breaker within Footer */
-
-.line_breaker {
-    margin: 1em auto;
-    border-bottom: var(--h1-color) 1px solid;
-}
-
-.contact_submit {
-    justify-content: center;
-    background-color: var(--flavour-background);
-    margin: 1em auto;
-    padding: 2em;
-    width: 75vw;
-    border-radius: 15px;
-    }
 
 /* Animations*/
 
@@ -444,6 +420,7 @@ footer table p {
 
     }
 
+    /* adding each item to their grid location */
     .flavour {
         margin-top: 1em;
         grid-area: b;
@@ -464,7 +441,7 @@ footer table p {
         margin: 0 auto;
         justify-content: center;
     }
-
+/* setting img size for responsive */
     .our_story img {
         max-width: 30vw;
     }
@@ -480,12 +457,12 @@ footer table p {
         box-shadow: 2px 5px 8px rgba(224,118,119,0.44);
     }
 
-
+/* setting img size for responsive */
     .hero img {
         max-width: 25vw;
     }
 
-
+/* desktop footer  */
     footer {
         margin: 1em 0 0;
     }
@@ -505,6 +482,7 @@ footer table p {
         text-align: right;
     }
 
+    /* desktop contact us  */
     .contact_us {
         margin: 0 auto;
         justify-content: center;
