@@ -143,8 +143,26 @@ Main section Styling
 
 
 *************************/
+/* Stlying Skip links off screen */
+.skip-links{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.skip-links a{
+  position: absolute;
+  top: -3em;
+  background-color: black;
+  color:white;
+  padding: .5em 1em;
+  font-weight: bold;
+}
+/* adds skip links on focus */
+.skip-links a:focus{
+  top: 0;
+}
 
-/* Selects  */
+/* Selects order area  */
 .hero {
     margin: 1em auto;
     max-width: 100%;

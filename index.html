@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- resets browser defaults -->
     <link rel="stylesheet" href="stylesheets/reset.css">
-    <link rel="stylesheet" href="stylesheets/main.css">
+    <!-- Connecting fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <!-- main styling sheet -->
+    <link rel="stylesheet" href="stylesheets/main.css">
     <title>Decadent Delight</title>
 </head>
 <body>
+     <ul class="skip-links">
+        <li><a href="#nav">Skip to main nav</a></li>
+        <li><a href="#main">Skip to main content</a></li>
+    </ul>
+<!-- outer wrapper will allow the website to strech full width -->
     <div class="outer_wrapper">
         <header>
+            <!-- Inner Wrapper will allow breathing room from outer edge -->
             <div class="inner_wrapper">
                 <h1>Decadent Delight</h1>
                 <nav>
+                    <!-- Main website Navigation - applied across site -->
                     <a href="index.html">Home</a>
                     <a href="aboutus.html">About Us</a>
                     <a href="contactus.html">Contact Us</a>
@@ -24,12 +34,14 @@
             </div>
         </header>
         <main class="inner_wrapper">
+            <!-- Hero section contains order options  -->
                 <div class="hero">
-                    <img src="images/cupcake.svg" alt="Cupcake">
+                    <img src="images/cupcake.svg" alt="Cupcake cartoon">
                     <a href="contactus.html">Order Online</a>
                     <a href="tel:1-888-888-8888">Phone Order</a>
                 </div>
                 <div class="flavour">
+                    <!-- Contains each days unique flavours -->
                         <h3>Today's Flavours</h3>
                         <ul>
                             <li>Chocolate</li>
@@ -39,14 +51,15 @@
                 </div>
     <!-- Quick summary of company story -  -->
                 <div class="our_story">
-                    <img src="images/shop.svg" alt="shop">
+                    <img src="images/shop.svg" alt="store front shop cartoon">
                     <p>Decadent Delight is a small family owned business that has been serving the community for over 20 years. We pride ourselves on our delicious cupcakes and our friendly service. We are located in the heart of downtown Toronto and are open 7 days a week. We look forward to serving you!</p>
                 </div>
             </div>
         </main>
-
+<!-- Footer containing store hours and how to contact them for orders - with copy right bottom right corner  -->
         <footer>
             <div class="inner_wrapper">
+                <!-- table used for uniform spacing making it responsive by default -->
                 <table>
                     <caption><h3>Open From</h3></caption>
                     <tr>
